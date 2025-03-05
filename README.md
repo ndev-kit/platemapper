@@ -7,7 +7,7 @@
 [![codecov](https://codecov.io/gh/ndev-kit/platemapper/branch/main/graph/badge.svg)](https://codecov.io/gh/ndev-kit/platemapper)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/platemapper)](https://napari-hub.org/plugins/platemapper)
 
-Map microplate treatments to image metadata.
+Map microplate treatments to metadata.
 
 ----------------------------------
 
@@ -26,9 +26,6 @@ https://napari.org/stable/plugins/index.html
 You can install `platemapper` via [pip]:
 
     pip install platemapper
-
-
-
 
 ## Contributing
 
