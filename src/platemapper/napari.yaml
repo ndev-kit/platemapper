@@ -3,6 +3,6 @@ display_name: ndev PlateMapper
 # use 'hidden' to remove plugin from napari hub search results
 visibility: public
 # see https://napari.org/stable/plugins/technical_references/manifest.html#fields for valid categories
-categories: ["Annotation", "Segmentation", "Acquisition"]
+categories: ["Utilities"]
 contributions:
   commands:
