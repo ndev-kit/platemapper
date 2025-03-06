@@ -113,7 +113,7 @@ jobs:
           persist-credentials: true
       - uses: actions/setup-python@v5
         with:
-          python-version-file: .python-version-default
+          python-version-file: .python-version
       - uses: hynek/setup-cached-uv@v2
 
       - name: Download coverage data
