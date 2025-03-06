@@ -44,7 +44,7 @@ platemapper = "platemapper:napari.yaml"
 
 
 [build-system]
-requires = ["setuptools>=42.0.0", "wheel"]
+requires = ["setuptools>=42.0.0", "wheel", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
@@ -57,8 +57,8 @@ where = ["src"]
 "*" = ["*.yaml"]
 
 
-[tool.setuptools.dynamic]
-version = {attr = "platemapper.__init__.__version__"}
+[tool.setuptools_scm]
+write_to = "src/platemapper/_version.py"
 
 [tool.black]
 line-length = 79
