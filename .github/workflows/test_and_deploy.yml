@@ -16,6 +16,9 @@ on:
       - npe2
   workflow_dispatch:
 
+env:
+  FORCE_COLOR: 1
+
 jobs:
   test:
     name: ${{ matrix.platform }} py${{ matrix.python-version }}
@@ -62,7 +65,14 @@ jobs:
           PLATFORM: ${{ matrix.platform }}
 
       - name: Coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
+        with:
+          token: be4e7201-27a9-4b44-a4a6-ff2903872cf1
+          files: .tox/*/coverage.xml
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: true
+
 
   deploy:
     # this will run when you have tagged a commit, starting with "v*"
