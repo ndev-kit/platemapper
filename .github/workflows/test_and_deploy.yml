@@ -16,6 +16,9 @@ on:
       - npe2
   workflow_dispatch:
 
+env:
+  FORCE_COLOR: 1
+
 jobs:
   test:
     name: ${{ matrix.platform }} py${{ matrix.python-version }}
