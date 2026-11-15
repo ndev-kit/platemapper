@@ -214,7 +214,7 @@ class PlateMapper:
             return f"background-color: {color_dict[value]}"
 
         plate_map_styled = (
-            self.pivoted_plate_map.style.applymap(get_background_color)
+            self.pivoted_plate_map.style.map(get_background_color)
             .set_caption(f"{treatment} Plate Map")
             .format(lambda x: "" if pd.isna(x) else x)
         )

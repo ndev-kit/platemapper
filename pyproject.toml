@@ -27,7 +27,7 @@ classifiers = [
 requires-python = ">=3.9"
 dependencies = [
     "numpy",
-    "pandas[output-formatting]",
+    "pandas[output-formatting]>=2.1",  # Styler.map
     "seaborn",
 ]
 
